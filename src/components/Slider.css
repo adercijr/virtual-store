@@ -1,0 +1,22 @@
+
+@media(max-width: 500px){
+    .content{
+        display: flex;
+        justify-content: center;
+    }
+    .Img{
+        width: 600px;
+        height: 220px;
+        justify-items: center;
+    }
+    .carousel {
+        width: 100%;
+    }    
+} 
+@media(min-width: 500px){
+    .Img{
+        width: 100%;
+    }
+    
+} 
+

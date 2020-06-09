@@ -1,0 +1,32 @@
+.input-icons {
+    width: 100%;
+}
+
+.Input{
+    width: 100%;
+    color: #333;
+    padding: 7px 60px 9px 15px;
+    outline-style: none;
+    border: none;
+    box-shadow: 0px 1px 2px rgb(163, 163, 163);
+    border-radius: 2px;
+    font-size: 16px;
+    
+}
+
+::placeholder{
+    color:#ccc;
+}
+
+.input-icons i { 
+    position: absolute; 
+    right: 15px;
+} 
+  
+.icon { 
+    margin-top: 4px;
+    padding: 7px 15px; 
+    width: 45px; 
+    color:rgb(175, 175, 175);
+    border-left: 1px solid rgb(235, 235, 235);
+} 

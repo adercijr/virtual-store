@@ -1,0 +1,45 @@
+.Menu-Mobile:focus{
+    outline: none;
+}
+
+@media(min-width:900px){    
+    div.logo{
+        content:url('../../assets/images/logo.png');
+        height: 35px;
+        min-width: 160px;
+        max-width: 160px;
+        padding: 0;
+    }
+}
+@media(max-width:900px){
+    div.logo{
+        content:url('../../assets/images/logo-mini.png');
+        min-width: 50px;
+        max-width: 50px;
+        height: 35px;
+        padding: 0px;
+    }   
+}
+@media(max-width: 1200px){    
+    .Container-Fluid{
+        max-width: 100%!important;
+    }
+    .Row-Header{
+        display: none!important;
+    }
+    .Menu-Mobile{
+        display: block;
+        background-color: #fff159;
+        border: none;
+        color: rgb(70, 70, 70);
+        outline: none;
+    }
+}
+.Row {
+    align-items: center;
+}
+.Content-Menu-Mobile{
+    display: flex;
+    justify-content: center;
+    margin: 0 5px;
+}
