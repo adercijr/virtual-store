@@ -1,0 +1,15 @@
+.ButtonAddress{ 
+    width: 160px;
+    background-color: var(--header-color);
+    border: none;
+    height: 38px;
+    margin-bottom: 5px;
+}
+.ButtonAddress:focus{
+    outline: none;
+}
+.ButtonAddress:hover{
+    box-sizing: border-box;
+    border: 1px solid #49440b23;
+    border-radius: 4px;
+}

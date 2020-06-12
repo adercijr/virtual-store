@@ -18,9 +18,9 @@
     }
     .Menu-Mobile{
         display: block;
-        background-color: #fff159;
+        background-color: var(--header-color);
         border: none;
-        color: rgb(70, 70, 70);
+        color: var(--font-color);
         outline: none;
     }
     .Download-App{
@@ -34,8 +34,8 @@
     div.logo{
         content:url('../../assets/images/logo.png');
         height: 35px;
-        min-width: 160px;
-        max-width: 160px;
+        min-width: 135px;
+        max-width: 135px;
         padding: 0;
     }
 }
@@ -48,3 +48,10 @@
     justify-content: center;
     margin: 0 5px;
 }
+.Row-Header {
+    padding: 0px;
+    display: flex;
+    align-items: flex-end;
+}
+
+

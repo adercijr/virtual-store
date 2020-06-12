@@ -6,16 +6,20 @@ const Input = props => {
     const [valueInput, handleWriteInput] = useState()
 
     const handleInput = (event) => {
-        handleWriteInput(event.target.value)
+        handleWriteInput(event.target.value)    
     }
 
+    const handleClear = () => {        
+        document.getElementById('onFocus').focus()
+        handleWriteInput('')
+    }
+  
     return (
         <div className="input-icons ">
-            {window.screen.width >= 1024 &&
-                <i className={`fa ${props.icon} ${props.icon && 'icon'}`}></i>
-            }         
-                       
-            <input id="ok" type={props.type} className='Input' placeholder={props.placeholder}
+
+            <i className={`fa ${props.icon} ${props.icon && 'icon'}`}></i>
+
+            <input id="onFocus" type={props.type} className='Input' placeholder={props.placeholder}
                 onChange={e => handleInput(e)} value={valueInput}>
             </input>
 
@@ -23,11 +27,11 @@ const Input = props => {
                 <i className={`fa ${props.iconBack}`}></i>
             </button>
 
-             {valueInput &&
-                <button className="iconClear" onFocus={() => handleWriteInput('')}>
+            {valueInput && 
+                <button className="iconClear" onFocus={() => handleClear()}>
                     <i className={`fa ${props.iconClear}`}></i>
                 </button>
-             }             
+            }
         </div>
     )
 }

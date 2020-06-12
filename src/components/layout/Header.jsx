@@ -1,18 +1,20 @@
 import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import './Header.css'
-import Input from '../Input'
+import Input from '../Geral/Input/Input'
+import ButtonAddress from '../Geral/ButtonAddress/ButtonAddress'
+import NavHeader from '../Geral/NavHeader/NavHeader'
 
 const Header = props => {
     const [toggle, handleToggle] = useState(false)
 
     return (
-        <Container fluid style={{ backgroundColor: "#fff159", padding: 0 }}>
+        <Container fluid style={{ backgroundColor: 'var(--header-color)', padding: 0 }}>
             <Container className="Container-Fluid">
                 <Row className="p-2 Row" >
-                    <div sm={1}>
+                    <Col sm={2}>
                         <a href="#"><div className="logo"></div> </a>
-                    </div>
+                    </Col>
                     <Col>
                         <Input type={'text'} placeholder={'Buscar produtos, marcas e muito mais...'}
                             icon="fa-search" iconBack="fa-arrow-left" iconClear="fa-times"
@@ -33,7 +35,15 @@ const Header = props => {
                     </Col>
 
                 </Row>
-                <Row className="p-2 Row-Header">2</Row>
+                <Row className="Row-Header">
+                    <Col sm={2}>
+                        <ButtonAddress />
+                    </Col>
+                    <Col style={{padding: 0}}>
+                        <NavHeader item={['test1', 'test2']}/>
+                    </Col>
+                    <Col sm={3}>3</Col>
+                </Row>
             </Container>
         </Container>
     )
