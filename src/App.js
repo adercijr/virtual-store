@@ -5,14 +5,16 @@ import Footer from './components/layout/Footer'
 import Slider from './components/Geral/Slider/Slider'
 import './App.css'
 
-function App() { 
+function App() {
 
   return (
     <div className="App">
-      <Header/>
-      <Slider />
-      <Content />
-      <Footer />
+      <Header />
+      <div id="content">
+        <Slider />
+        <Content />
+        <Footer />
+      </div>
     </div>
   )
 }

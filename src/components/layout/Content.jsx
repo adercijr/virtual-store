@@ -1,12 +1,13 @@
 import React from 'react'
-import {InputGroup, FormControl} from 'react-bootstrap'
+import {InputGroup} from 'react-bootstrap'
+import Triangle from '../Geral/Triangle/Triangle'
 
 const Content = props => {
     return (
         <div>
             <h1>Content</h1>
             <InputGroup>
-                <FormControl></FormControl>
+                <Triangle direction={'up'} size={'10px'} color={'green'}/>
             </InputGroup>
         </div>
     )

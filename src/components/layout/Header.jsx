@@ -12,8 +12,8 @@ const Header = props => {
         <Container fluid style={{ backgroundColor: 'var(--header-color)', padding: 0 }}>
             <Container className="Container-Fluid">
                 <Row className="p-2 Row" >
-                    <Col sm={2}>
-                        <a href="#"><div className="logo"></div> </a>
+                    <Col sm={2} className="colLogo">
+                        <a href="/"><div className="headerLogo"></div></a>                        
                     </Col>
                     <Col>
                         <Input type={'text'} placeholder={'Buscar produtos, marcas e muito mais...'}
@@ -40,7 +40,7 @@ const Header = props => {
                         <ButtonAddress />
                     </Col>
                     <Col style={{padding: 0}}>
-                        <NavHeader item={['test1', 'test2']}/>
+                        <NavHeader/>
                     </Col>
                     <Col sm={3}>3</Col>
                 </Row>

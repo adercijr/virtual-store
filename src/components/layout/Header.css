@@ -6,13 +6,19 @@
     .Container-Fluid{
         max-width: 100%!important;
     }
-    div.logo{
-        content:url('../../assets/images/logo-mini.png');
+    div .colLogo{        
         min-width: 50px;
         max-width: 50px;
         height: 35px;
         padding: 0px;
     } 
+    .headerLogo {
+        content:url('../../assets/images/logo-mini.png');
+        min-width: 50px;
+        max-width: 50px;
+        height: 35px;
+        padding: 0px;
+    }
     .Row-Header{
         display: none!important;
     }
@@ -31,7 +37,13 @@
     .Content-Menu-Mobile{        
         display: none!important;
     }
-    div.logo{
+    div .colLogo{
+        height: 35px;
+        min-width: 135px;
+        max-width: 135px;
+        padding: 0;
+    }
+    div .headerLogo{
         content:url('../../assets/images/logo.png');
         height: 35px;
         min-width: 135px;
