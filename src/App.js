@@ -10,9 +10,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div id="content">
-        <Slider />
-        <Content />
+      <div id="content" className="container-fluid containerApp bg-light">
+        <div className="containerSlider">
+          <Slider />
+        </div>
+        <div className="container p-0 contentApp bg-white" >
+          <Content />
+        </div>
         <Footer />
       </div>
     </div>

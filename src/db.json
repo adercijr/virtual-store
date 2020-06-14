@@ -1,0 +1,259 @@
+[
+    {
+       "id": 1,
+       "name": "Categoria",
+       "subMenu": [
+          {
+             "name": "Veículos",
+             "id": 2,
+             "parentId": 1
+          },
+          {
+             "name": "Tecnologia",
+             "id": 1,
+             "parentId": 1,
+             "subMenu": [
+                {
+                   "name": "Celulares e telefones",
+                   "id": 1,
+                   "parentId": 1,
+                   "subMenu": [
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      }
+                   ]
+                },
+                {
+                   "name": "Cameras e acessórios",
+                   "id": 2,
+                   "parentId": 1,
+                   "subMenu": [
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      }
+                   ]
+                },
+                {
+                   "name": "Games",
+                   "id": 3,
+                   "parentId": 1,
+                   "subMenu": [
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      }
+                   ]
+                },
+                {
+                   "name": "Informática",
+                   "id": 4,
+                   "parentId": 1,
+                   "subMenu": [
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      }
+                   ]
+                },
+                {
+                   "name": "Eletrônicos, Áudio e Vídeo",
+                   "id": 5,
+                   "parentId": 1,
+                   "subMenu": [
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      }
+                   ]
+                }
+             ]
+          },
+          {
+             "name": "asdas",
+             "id": 3,
+             "parentId": 1
+          },
+          {
+             "name": "asdas",
+             "id": 4,
+             "parentId": 1,
+             "subMenu": [
+                {
+                   "name": "variados",
+                   "id": 1,
+                   "parentId": 1,
+                   "subMenu": [
+                      {
+                         "name": "variados",
+                         "id": 1,
+                         "parentId": 1,
+                         "subMenu": [
+                            {
+                               "name": "variados",
+                               "id": 1,
+                               "parentId": 1
+                            }
+                         ]
+                      }
+                   ]
+                }
+             ]
+          },
+          {
+             "name": "asdas",
+             "id": 5,
+             "parentId": 1
+          },
+          {
+             "name": "Casa e eletrodoméstico",
+             "id": 6,
+             "parentId": 1,
+             "subMenu": [
+                {
+                   "name": "Eletrodomésticos",
+                   "id": 1,
+                   "parentId": 1,
+                   "subMenu": [
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      }
+                   ]
+                },
+                {
+                   "name": "Utilidades domésticas",
+                   "id": 2,
+                   "parentId": 1,
+                   "subMenu": [
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      }
+                   ]
+                },
+                {
+                   "name": "Games",
+                   "id": 3,
+                   "parentId": 1,
+                   "subMenu": [
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      }
+                   ]
+                },
+                {
+                   "name": "Informática",
+                   "id": 4,
+                   "parentId": 1,
+                   "subMenu": [
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      }
+                   ]
+                },
+                {
+                   "name": "Eletrônicos, Áudio e Vídeo",
+                   "id": 5,
+                   "parentId": 1,
+                   "subMenu": [
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      }
+                      
+                   ]
+                }
+             ]
+          }
+       ]
+    },
+    {
+       "id": 2,
+       "name": "Ofertas"
+    },
+    {
+       "id": 3,
+       "name": "Menus",
+       "subMenu": [
+          {
+             "name": "123"
+          },
+          {
+             "name": "123"
+          },
+          {
+             "name": "123"
+          },
+          {
+             "name": "123"
+          },
+          {
+             "name": "123"
+          }
+       ]
+    }
+ ]

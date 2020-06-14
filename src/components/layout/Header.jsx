@@ -9,11 +9,11 @@ const Header = props => {
     const [toggle, handleToggle] = useState(false)
 
     return (
-        <Container fluid style={{ backgroundColor: 'var(--header-color)', padding: 0 }}>
+        <Container fluid style={{ backgroundColor: 'var(--header-color)', padding: 0}}>
             <Container className="Container-Fluid">
                 <Row className="p-2 Row" >
                     <Col sm={2} className="colLogo">
-                        <a href="/"><div className="headerLogo"></div></a>                        
+                        <a href="/"><div className="headerLogo"></div></a>
                     </Col>
                     <Col>
                         <Input type={'text'} placeholder={'Buscar produtos, marcas e muito mais...'}
@@ -22,7 +22,10 @@ const Header = props => {
                     </Col>
 
                     <Col sm={4} className="Download-App">
-                        <span>Baixe o App gratis do Mercado Livre!</span>
+                        <a href="/">
+                            <i className="fa fa-mobile fa-2x mr-2" aria-hidden="true"></i>
+                            <span>Baixe o App gratis do Mercado Livre!</span>
+                        </a>
                     </Col>
 
                     <Col className="Content-Menu-Mobile" xs={1}>
@@ -36,13 +39,15 @@ const Header = props => {
 
                 </Row>
                 <Row className="Row-Header">
-                    <Col sm={2}>
+                    <div className="pr-2" style={{width: '150px!important'}}>
                         <ButtonAddress />
+                    </div>
+                    <Col style={{ padding: 0 }}>
+                        <NavHeader db="db" justify={'justify-start'} />
                     </Col>
-                    <Col style={{padding: 0}}>
-                        <NavHeader/>
+                    <Col sm={4}>
+                        <NavHeader db="db2" justify={'justify-around'}/>
                     </Col>
-                    <Col sm={3}>3</Col>
                 </Row>
             </Container>
         </Container>

@@ -4,3 +4,12 @@
     align-items: center;
     width: 100%;
 }
+
+.containerApp {
+    min-height: 100vh;
+    padding: 0!important;
+}
+.containerSlider{
+    display: flex;
+    justify-content: center;
+}

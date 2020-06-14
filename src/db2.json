@@ -1,0 +1,15 @@
+[
+    {
+       "id": 1,
+       "name": "Crie a sua conta"
+    },
+    {
+       "id": 2,
+       "name": "Entre"
+    },
+    {
+       "id": 3,
+       "icon": "fa fa-shopping-cart fa-lg",
+       "iconSpan": "Carrinho"       
+    }
+ ]

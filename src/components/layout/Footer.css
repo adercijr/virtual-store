@@ -1,0 +1,27 @@
+.footerDesktop {
+    border-top: 1px solid rgb(238, 238, 238);      
+}
+.footerDesktop span{
+    font-size: 0.7em;    
+    display: flex; 
+    padding: 3px 0px;
+    color: rgb(151, 151, 151);
+}
+
+.footerMobile {
+    border-top: 1px solid rgb(238, 238, 238);      
+}
+.footerMobile span{
+    border-top: 1px solid rgb(238, 238, 238);     
+}
+
+@media(max-width: 1024px){
+    .footerDesktop {      
+        display: none;
+    }
+}
+@media(min-width: 1024px){
+    .footerMobile {      
+        display: none;
+    }
+}

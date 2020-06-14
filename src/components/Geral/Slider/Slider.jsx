@@ -9,7 +9,7 @@ const Slider = props => {
 
     return (
 
-        <Carousel interval={3000} className="carousel">
+        <Carousel id="carousel" interval={3000} className="carousel">
             <Carousel.Item >
                 <div className="content">
                     <img className="Img"

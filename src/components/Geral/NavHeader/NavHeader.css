@@ -2,9 +2,15 @@
     margin: 0;
     padding: 0;
     display: flex;
+    font-size: 0.9em;
+    align-items: center;
+}
+.nav-component span{
+    font-size: 0.8em;
+    margin: 5px;
 }
 .menuLi {
-    padding: 10px 10px;
+    padding: 10px 25px 10px 0;
     margin: 0;
     display: flex;
     justify-content: flex-end;
@@ -18,8 +24,8 @@
     color: var(--font-color)
 }
 .subMenu {
-    position: fixed;
-    z-index: 20; 
+    position: absolute;
+    z-index: 200; 
     background-color: #333;
     width: 250px; 
     border-radius: 4px;
@@ -32,7 +38,7 @@
 .itemSubMenu {    
     color: #fff;  
     padding: 10px 30px;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,8 +50,8 @@
     display: block!important;
 }
 .subMenuSub {
-    position: fixed;
-    z-index: 21; 
+    position: absolute;
+    z-index: 210; 
     background-color: #fff;
     width: 450px; 
     border-radius: 2px;
@@ -53,5 +59,19 @@
     height: 400px;
     width: 500px;
     margin-left: 248px;
-    top: 100px;
+    top: 0px;
+}
+
+.ItemIcon {
+    font-size: 1.4em;
+    color: var(--font-color);
+}
+.ItemIcon span{
+    font-size: 0.65em;
+}
+.justify-around {    
+    justify-content: space-around;
+}
+.justify-start {    
+    justify-content: flex-start;
 }

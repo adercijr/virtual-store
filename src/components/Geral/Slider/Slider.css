@@ -20,3 +20,9 @@
     
 } 
 
+.carousel {
+    max-width: 1600px;
+    left: 0;
+    right: 0;
+}
+

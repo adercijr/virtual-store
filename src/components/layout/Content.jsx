@@ -1,14 +1,16 @@
 import React from 'react'
-import {InputGroup} from 'react-bootstrap'
-import Triangle from '../Geral/Triangle/Triangle'
 
 const Content = props => {
     return (
-        <div>
-            <h1>Content</h1>
-            <InputGroup>
-                <Triangle direction={'up'} size={'10px'} color={'green'}/>
-            </InputGroup>
+        <div style={{
+            width: '100%', height: '800px',
+            display: 'flex', justifyContent: 'center'
+        }}>
+
+            <div style={{
+                width: '80%', height: '500px', backgroundColor: '#ccc',
+                display: 'flex', justifyContent: 'center'
+            }}></div>
         </div>
     )
 }

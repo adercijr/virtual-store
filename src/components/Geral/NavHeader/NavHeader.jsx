@@ -8,264 +8,37 @@ const NavHeader = props => {
     const [isHover, handleHover] = useState()
     const [isHoverSub, handleHoverSub] = useState()
 
-    const menuItems = [
-        {
-            id: 1,
-            name: 'Categoria',
-            subMenu: [
-                {
-                    name: 'Veículos',
-                    id: 2,
-                    parentId: 1,
-                },
-                {
-                    name: 'Tecnologia',
-                    id: 1,
-                    parentId: 1,
-                    subMenu: [
-                        {
-                            name: 'Celulares e telefones',
-                            id: 1,
-                            parentId: 1,
-                            subMenu: [
-                                {
-                                    name: 'Celulares e Smartphones',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                                {
-                                    name: 'Acessórios para celulares',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                            ]
-                        },
-                        {
-                            name: 'Cameras e acessórios',
-                            id: 2,
-                            parentId: 1,
-                            subMenu: [
-                                {
-                                    name: 'Celulares e Smartphones',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                                {
-                                    name: 'Acessórios para celulares',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                            ]
-                        },
-                        {
-                            name: 'Games',
-                            id: 3,
-                            parentId: 1,
-                            subMenu: [
-                                {
-                                    name: 'Celulares e Smartphones',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                                {
-                                    name: 'Acessórios para celulares',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                            ]
-                        },
-                        {
-                            name: 'Informática',
-                            id: 4,
-                            parentId: 1,
-                            subMenu: [
-                                {
-                                    name: 'Celulares e Smartphones',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                                {
-                                    name: 'Acessórios para celulares',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                            ]
-                        },
-                        {
-                            name: 'Eletrônicos, Áudio e Vídeo',
-                            id: 5,
-                            parentId: 1,
-                            subMenu: [
-                                {
-                                    name: 'Celulares e Smartphones',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                                {
-                                    name: 'Acessórios para celulares',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                            ]
-                        }
-
-                    ]
-                },
-                {
-                    name: 'asdas', id: 3,
-                    parentId: 1,
-                },
-                {
-                    name: 'asdas', id: 4,
-                    parentId: 1,
-                    subMenu: [
-                        {
-                            name: 'variados',
-                            id: 1,
-                            parentId: 1,
-                            subMenu: [
-                                {
-                                    name: 'variados',
-                                    id: 1,
-                                    parentId: 1,
-                                    subMenu: [
-                                        {
-                                            name: 'variados',
-                                            id: 1,
-                                            parentId: 1
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    name: 'asdas', id: 5,
-                    parentId: 1,
-                }, {
-                    name: 'Casa e eletrodoméstico',
-                    id: 6,
-                    parentId: 1,
-                    subMenu: [
-                        {
-                            name: 'Eletrodomésticos',
-                            id: 1,
-                            parentId: 1,
-                            subMenu: [
-                                {
-                                    name: 'Celulares e Smartphones',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                                {
-                                    name: 'Acessórios para celulares',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                            ]
-                        },
-                        {
-                            name: 'Utilidades domésticas',
-                            id: 2,
-                            parentId: 1,
-                            subMenu: [
-                                {
-                                    name: 'Celulares e Smartphones',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                                {
-                                    name: 'Acessórios para celulares',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                            ]
-                        },
-                        {
-                            name: 'Games',
-                            id: 3,
-                            parentId: 1,
-                            subMenu: [
-                                {
-                                    name: 'Celulares e Smartphones',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                                {
-                                    name: 'Acessórios para celulares',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                            ]
-                        },
-                        {
-                            name: 'Informática',
-                            id: 4,
-                            parentId: 1,
-                            subMenu: [
-                                {
-                                    name: 'Celulares e Smartphones',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                                {
-                                    name: 'Acessórios para celulares',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                            ]
-                        },
-                        {
-                            name: 'Eletrônicos, Áudio e Vídeo',
-                            id: 5,
-                            parentId: 1,
-                            subMenu: [
-                                {
-                                    name: 'Celulares e Smartphones',
-                                    id: 1,
-                                    parentId: 1
-                                },
-                                {
-                                    name: 'Acessórios para celulares',
-                                    id: 1,
-                                    parentId: 1
-                                }
-                            ]
-                        }
-
-                    ]
-                },
-            ]
-        },
-        {
-            id: 2,
-            name: 'Ofertas',
-        },
-        {
-            id: 3,
-            name: 'Menus',
-            subMenu: [{ name: '123' }, { name: '123' }, { name: '123' }, { name: '123' }, { name: '123' }]
-        }
-    ]
+    const menuItems = require(`../../../${props.db}.json`)
 
     return (
-        <div className="nav-component">
+        <div className={`nav-component ${props.justify}`}
+            style={{ fontSize: `${props.fontSize}` }}>
             {menuItems.map(item => {
+                if (item.icon) {
+                    return (
+                        <a href="/">
+                            <i className={`${item.icon} ItemIcon`} style={{ color: `${props.color}` }}>
+                                <span style={{ fontSize: `${props.fontSize}` }}>{item.iconSpan}</span>
+                            </i>
+                        </a>
+                    )
+                }
                 if (item.subMenu) {
                     const show = (id) => {
                         handleHover(id)
-                        document.getElementById('content').style.filter = 'grayscale(40%)'
+                        document.getElementById('content').style.filter = 'brightness(70%)'
+                        document.getElementById('carousel').style.filter = 'brightness(70%)'
                     }
                     const hidden = (id) => {
                         handleHover('')
-                        document.getElementById('content').style.filter = 'grayscale(0%)'
+                        document.getElementById('content').style.filter = 'brightness(100%)'
+                        document.getElementById('carousel').style.filter = 'brightness(100%)'
                     }
 
                     return (
-                        <div onMouseEnter={() => show(item.id)} onMouseLeave={() => hidden(item.id)} key={item.id}>
-                            <div className="menuLi">
-                                <a href="#">{item.name}
+                        <div onMouseEnter={() => show(item.id)} onMouseLeave={() => hidden(item.id)} key={item.id} id="HEADER">
+                            <div className="menuLi" style={{ color: `${props.color}` }}>
+                                <a href="#" style={{ color: `${props.color}` }}>{item.name}
                                     <i className="fa fa-angle-down pl-2" aria-hidden="true"></i>
                                 </a>
 
@@ -289,7 +62,7 @@ const NavHeader = props => {
                                             }
                                             return (
                                                 <div onMouseEnter={() => showSub(sub.id)} onMouseLeave={() => hiddenSub(sub.id)} key={sub.id}>
-                                                    <a href="index.html" key={index}>
+                                                    <a href="index.html" key={index} style={{ color: `${props.color}` }}>
                                                         <div className="itemSubMenu">{sub.name}
                                                             <i className="fa fa-angle-right pl-2 text-white-50" aria-hidden="true"></i>
                                                         </div>
@@ -298,7 +71,7 @@ const NavHeader = props => {
                                                         <div className="subMenuSub">
                                                             <h5>{sub.name}</h5>
                                                             <hr></hr>
-                                                            <div style={{ display: 'flex', flexWrap: 'wrap', fontSize: '0.9rem' }}>
+                                                            <div style={{ display: 'flex', flexWrap: 'wrap', fontSize: '0.9em' }}>
                                                                 {sub.subMenu.map(s => {
                                                                     return (
                                                                         <Col sm={5} style={{ margin: '0px 15px 15px 0px', padding: 0 }} key={s.id}>
@@ -306,7 +79,7 @@ const NavHeader = props => {
                                                                             {s.subMenu.map(item => {
                                                                                 return (
                                                                                     <div style={{ display: 'flex' }}>
-                                                                                        <a href="/">{item.name}</a>
+                                                                                        <a href="/" style={{ color: `${props.color}` }}>{item.name}</a>
                                                                                     </div>
                                                                                 )
 
@@ -322,7 +95,7 @@ const NavHeader = props => {
                                             )
                                         } else {
                                             return (
-                                                <a href="index.html" key={index}><div className="itemSubMenu">{sub.name}</div></a>
+                                                <a href="index.html" key={index} style={{ color: `${props.color}` }}><div className="itemSubMenu">{sub.name}</div></a>
                                             )
                                         }
                                     })}
@@ -331,7 +104,7 @@ const NavHeader = props => {
                         </div>
                     )
                 } else {
-                    return <div className="menuLi" key={item.id}><a href="#">{item.name}</a></div>
+                    return <div className="menuLi" key={item.id}><a style={{ color: `${props.color}` }} href="#">{item.name}</a></div>
                 }
             })}
         </div>
