@@ -1,0 +1,34 @@
+[
+    {
+       "id": 1,
+       "name": "Minha conta"
+    },
+    {
+       "id": 2,
+       "name": "Categorias"
+    },
+    {
+      "id": 3,
+      "name": "Contato"
+   },   
+    {
+      "id": 4,
+      "name": "Histórico"
+   },
+   {
+      "id": 5,
+      "name": "Ofertas"
+   },
+   {
+      "id": 6,
+      "name": "Vender"
+   },
+   {
+      "id": 7,
+      "name": "Carrinho"
+   },
+   {
+      "id": 8,
+      "name": "Favoritos"
+   }
+ ]

@@ -1,0 +1,36 @@
+.navFooter {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navFooter span{
+    font-size: 0.8em;
+    margin: 5px;
+}
+.footerItem {
+    width: 25%;
+    padding: 10px 25px 10px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.footerItem a{
+    text-decoration: none;
+    color:  rgba(70, 70, 70, 0.753);
+}
+.footerItem a:hover{
+    text-decoration: none;
+    color: var(--font-color)
+}
+@media(max-width: 600px){
+    .footerItem {
+        width: 50%;
+    }
+}
+@media(min-width: 600px){
+    .footerItem {
+        width: 33%;
+    }
+}

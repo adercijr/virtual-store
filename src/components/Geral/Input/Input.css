@@ -15,7 +15,7 @@
 
 @media(max-width: 1024px) { 
     .Input {        
-        padding: 4px 60px 4px 15px;        
+        padding: 7px 60px 7px 15px;        
     }  
     .Input:focus {
         position: fixed;
@@ -46,7 +46,7 @@
         z-index: 20;
         right: 18px;
         padding: 4px 15px;
-        top: 0px;
+        top: 4px;
         border: none;
         background-color: rgb(255, 255, 255);
         color: var(--font-color);

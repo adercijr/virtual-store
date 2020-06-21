@@ -1,0 +1,28 @@
+[
+    {
+       "id": 1,
+       "icon": "fa fa-home fa-lg",
+       "iconSpan": "Início"
+    },
+    {
+       "id": 2,
+       "icon": "fa fa-money fa-lg",
+       "iconSpan": "Ofertas"
+    },
+    {
+       "id": 3,
+       "icon": "fa fa-handshake-o fa-lg",
+       "iconSpan": "Vender"
+    },
+    {
+       "id": 4,
+       "icon": "fa fa-list-ul fa-lg",
+       "iconSpan": "Categorias"
+    },
+    {
+       "id": 5,
+       "icon": "fa fa-user-o fa-lg",
+       "iconSpan": "Contato"
+    }
+    
+ ]

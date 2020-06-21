@@ -2,7 +2,7 @@
     outline-style: none;
     border-radius: 5px;
     border: 1px solid rgb(216, 216, 216);
-    background-color: rgb(255, 230, 0);
+    background-color: var(--header-color);
     font-size: 0.9em;    
     padding: 5px 8px;
     display: flex;
@@ -13,5 +13,5 @@
     font-size: 0.75em;  
 }
 .lg{
-    font-size: 1.2em; 
+    font-size: 1em; 
 }

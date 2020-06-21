@@ -75,3 +75,13 @@
 .justify-start {    
     justify-content: flex-start;
 }
+.nav-component span {
+    font-size: 1em;
+}
+.nav-component a {
+    text-decoration: none!important;
+    color: initial;
+}
+.nav-component a:hover {
+    color: initial;
+}

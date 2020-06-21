@@ -18,8 +18,8 @@ const NavHeader = props => {
                     return (
                         <a href="/">
                             <i className={`${item.icon} ItemIcon`} style={{ color: `${props.color}` }}>
-                                <span style={{ fontSize: `${props.fontSize}` }}>{item.iconSpan}</span>
                             </i>
+                                <span style={{ fontSize: `${props.fontSize}` }}>{item.iconSpan}</span>
                         </a>
                     )
                 }
