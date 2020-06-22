@@ -10,3 +10,12 @@ body {
   -moz-osx-font-smoothing: grayscale;   
 }
 
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@media(max-width: 1024px){
+  .container, .container-md, .container-sm {
+    margin: 0!important;
+    max-width: 100%!important;
+  }
+}

@@ -1,16 +1,13 @@
 import React from 'react'
+import CarouselCard from '../Geral/CarouselCard/CarouselCard'
+import './Content.css'
 
 const Content = props => {
     return (
-        <div style={{
-            width: '100%', height: '800px',
-            display: 'flex', justifyContent: 'center'
-        }}>
-
-            <div style={{
-                width: '80%', height: '500px', backgroundColor: '#ccc',
-                display: 'flex', justifyContent: 'center'
-            }}></div>
+        <div className="container p-0 div-Content " >
+            <div className="container-content">
+                <CarouselCard />
+            </div>
         </div>
     )
 }

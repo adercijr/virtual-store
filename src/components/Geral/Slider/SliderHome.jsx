@@ -1,11 +1,11 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
-import './Slider.css'
+import './SliderHome.css'
 import img1 from '../../../assets/images/carousel1.jpg'
 import img2 from '../../../assets/images/carousel2.jpg'
 import img3 from '../../../assets/images/carousel3.jpg'
 
-const Slider = props => {
+const SliderHome = props => {
 
     return (
 
@@ -41,4 +41,4 @@ const Slider = props => {
 
     )
 }
-export default Slider
+export default SliderHome

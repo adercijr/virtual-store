@@ -1,0 +1,39 @@
+.ContainerApp{
+  margin-top: 50px;
+  width: 100%;
+}
+.CardCarousel{
+  margin: 10px;
+  outline: none; 
+}
+
+
+.slick-prev:before, .slick-next:before {
+  color: rgb(37, 37, 37);
+  font-size: 60px;
+  display: none;
+  position: absolute;
+  padding: 0px!important;
+  background-color: transparent;
+  border: none;
+  }
+.slick-prev font{
+  margin-top: 100px;
+}
+.slick-prev {
+  left: -18px;
+  z-index: 10000; 
+  top: 130px; 
+}
+.slick-next {
+  z-index: 10000; 
+  top: 130px; 
+  right: 12px;
+}
+
+.ContainerApp:hover .slick-prev:before{
+  display: block;
+} 
+.ContainerApp:hover .slick-next:before{
+  display: block;
+} 
