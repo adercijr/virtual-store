@@ -12,5 +12,6 @@
 .containerApp{
     min-height: 100vh;
     padding: 0!important;
+    background-color: rgb(235, 233, 233);
 }
 

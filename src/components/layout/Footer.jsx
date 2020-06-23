@@ -22,7 +22,7 @@ const Footer = props => {
                 </div>
             </footer>
 
-            <footer className="footerMobile w-100">                
+            <footer className="footerMobile bg-white w-100">                
                     <Row className="footerStrip m-0" >
                         <a href="#" className="footerLink">
                             <div className="footerImg">

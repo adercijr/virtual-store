@@ -1,0 +1,72 @@
+[
+    {
+       "id": 1,
+       "description": "Smart TV LED 32 HD Samsung 32J4290 com Plataforma Tizen, Wide Color Enhancer Plus, Espelhamento de Tela, Wi-Fi, Dolby Digital Plus, HDMI e USB",
+       "price": 1299.00,
+       "newPrice": 1099.00,
+       "img": "TV.jpeg"
+    },
+    {
+      "id": 2,
+      "description": "Forno de Micro-ondas Electrolux MI41S com Painel Integrado - 31L",
+      "price": 819.00,
+      "newPrice": 759.00,
+      "img": "forno.jpg"
+   },
+   {
+      "id": 3,
+      "description": "Aspirador de Água e Pó Electrolux Hidrolux AWD01 1250W",
+      "price": 199.90,
+      "newPrice": 179.00,
+      "img": "aspirador.jpg"
+   },
+   {
+      "id": 4,
+      "description": "Notebook Lenovo Core i3-8130U 4GB 1TB Tela 15.6” Windows 10 Ideapad S145",
+      "price": 2599.00,
+      "newPrice": 2399.00,
+      "img": "notebook.jpg"
+   },
+   {
+      "id": 5,
+      "description": "Smartphone Samsung Galaxy A10s Preto 32GB, Câmera Dupla Traseira, Selfie de 8MP, Tela Infinita de 6.2, Leitor de Digital, Octa Core e Android 9.0",
+      "price": 999.00,
+      "newPrice": 899.00,
+      "img": "a10s.jpg"
+   },
+   {
+      "id": 6,
+      "description": "Fritadeira Elétrica Sem Óleo Air Fryer Mondial New Pratic AF31 3,5 L – Preto",
+      "price": 299.90,
+      "newPrice": 229.00,
+      "img": "fritadeira.jpg"
+   },
+   {
+      "id": 7,
+      "description": "Liquidificador Philco PH900 12 Velocidades 1200W - Preto",
+      "price": 124.90,
+      "newPrice": 99.90,
+      "img": "liquidificador.jpg"
+   },
+   {
+      "id": 8,
+      "description": "Tablet Samsung Galaxy Tab S6 Lite P615 64GB, 4GB RAM, Tela Imersiva de 10.4', Câmera Traseira 8MP, Câmera Frontal de 5MP, 4G e Android 10 - Cinza",
+      "price": 2999.00,
+      "newPrice": 2199.00,
+      "img": "tablet.jpg"
+   },
+   {
+       "id": 9,
+       "description": "Lavadora de Roupas Brastemp 15Kg Top Load BWH15AB - Branca",
+       "price": 2029.00,
+       "newPrice": 1899.00,
+       "img": "lavadoura.jpg"
+    },    
+   {
+       "id": 10,
+       "description": "Fone de Ouvido JBL T110 In Ear Pure Bass Preto",
+       "price": 39.90,
+       "newPrice": 34.00,
+       "img": "fonedeouvido.jpg"
+    }    
+ ]

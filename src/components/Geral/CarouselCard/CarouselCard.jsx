@@ -6,14 +6,16 @@ import Card from '../Card/Card'
 
 const CarouselCard = props => {
 
+  const db = require(`../../../${props.db}.json`)
+
   const settings = {
     dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 5,
-    initialSlide: 0,
-    swipeToSlide: true,
+    swipeToSlide: false,
+    touchMove: false,
     responsive: [
       {
         breakpoint: 1025,
@@ -34,47 +36,34 @@ const CarouselCard = props => {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToScroll: 1,
+          initialSlide: 1,
+          touchMove: true,
         }
       }
     ]
   }
 
   return (
-    <div className="ContainerApp">
+    <div className="Container-carousel-card">
       <div>
-        <span style={{ fontSize: '2em', marginRight: '20px'}}>Ofertas</span>
+        <span style={{ fontSize: '2em', marginRight: '20px', marginLeft: '10px' }}>{props.title}</span>
         <a href='/' style={{ textDecoration: 'none' }}>Ver todas</a>
       </div>
       <Slider {...settings}>
-        <div className="CardCarousel">
-          <Card />
-        </div>
-        <div className="CardCarousel">
-          <Card />
-        </div>
-        <div className="CardCarousel">
-          <Card />
-        </div>
-        <div className="CardCarousel">
-          <Card />
-        </div>
-        <div className="CardCarousel">
-          <Card />
-        </div>
-        <div className="CardCarousel">
-          <Card />
-        </div>
-        <div className="CardCarousel">
-          <Card />
-        </div>
-        <div className="CardCarousel">
-          <Card />
-        </div>
-        <div className="CardCarousel">
-          <Card />
-        </div>
+
+        {db.map(card => {
+          return (
+            <div className="CardCarousel" key={card.id}>
+              <Card {...card} />
+            </div>
+          )
+        })
+        }
+
+
+
+
       </Slider>
     </div>
   )

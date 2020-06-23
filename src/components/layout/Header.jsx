@@ -5,6 +5,7 @@ import Input from '../Geral/Input/Input'
 import ButtonAddress from '../Geral/ButtonAddress/ButtonAddress'
 import NavHeader from '../Geral/NavHeader/NavHeader'
 import NavMenuMobile from '../Geral/NavMenuMobile/NavMenuMobile'
+import { Link } from 'react-router-dom'
 
 const Header = props => {
     const [toggle, handleToggle] = useState(false)
@@ -15,7 +16,7 @@ const Header = props => {
                 <Container className="Container-Fluid">
                     <Row className="p-2 Row" >
                         <Col sm={2} className="colLogo">
-                            <a href="/"><div className="headerLogo"></div></a>
+                            <Link to="/"><div className="headerLogo"></div></Link>
                         </Col>
                         <Col>
                             <Input type={'text'} placeholder={'Buscar produtos, marcas e muito mais...'}

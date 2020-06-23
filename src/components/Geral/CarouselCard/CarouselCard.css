@@ -1,4 +1,4 @@
-.ContainerApp{
+.Container-carousel-card{
   margin-top: 50px;
   width: 100%;
 }
@@ -31,9 +31,9 @@
   right: 12px;
 }
 
-.ContainerApp:hover .slick-prev:before{
+.Container-carousel-card:hover .slick-prev:before{
   display: block;
 } 
-.ContainerApp:hover .slick-next:before{
+.Container-carousel-card:hover .slick-next:before{
   display: block;
 } 
