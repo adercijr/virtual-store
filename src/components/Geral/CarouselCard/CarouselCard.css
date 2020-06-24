@@ -37,3 +37,20 @@
 .Container-carousel-card:hover .slick-next:before{
   display: block;
 } 
+
+.container-content {
+  width: 100%;
+  height: 465px;
+  display: flex;
+  justify-content: center;
+}
+
+@media(max-width: 1024){
+  .container-content { 
+      width:100%!important;        
+    }
+    .container, .container-md, .container-sm {
+      margin: 0!important;
+      max-width: 100%!important;
+    }
+}

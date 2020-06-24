@@ -11,6 +11,12 @@
     overflow: hidden;
     background-color: #fff;
   }
+  .Card span {
+    color: var(--font-color);
+  }
+  .Card strong {
+    color: rgb(61, 61, 61);
+  }
   .Card:hover {
     height: 350px;
     box-shadow: 0px 4px 15px rgb(156, 156, 156);
@@ -45,7 +51,7 @@
       padding-left: 10px;
   }
   .Card-Price strong {
-     font-size: 1.2em;
+     font-size: 1.3em;
   }
   .Card-Price span {
      font-size: 0.9em;

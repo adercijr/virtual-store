@@ -27,11 +27,18 @@ const NavHeader = props => {
                 if (item.subMenu) {
                     const show = (id) => {
                         handleHover(id)
-                        document.getElementById('content').style.filter = 'brightness(70%)'
+                        document.getElementById('content').style.filter = 'brightness(70%)'                        
+                        if(document.getElementById('sliderHome')){
+                            document.getElementById('sliderHome').style.filter = 'brightness(70%)'
+                        }
                     }
                     const hidden = (id) => {
                         handleHover('')
                         document.getElementById('content').style.filter = 'brightness(100%)'
+                        
+                        if(document.getElementById('sliderHome')){
+                            document.getElementById('sliderHome').style.filter = 'brightness(100%)'
+                        }
                     }
 
                     return (

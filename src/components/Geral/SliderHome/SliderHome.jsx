@@ -8,36 +8,38 @@ import img3 from '../../../assets/images/carousel3.jpg'
 const SliderHome = props => {
 
     return (
-        <div className="containerSlider">
-            <Carousel id="carousel" interval={3000} className="carousel">
-                <Carousel.Item >
-                    <div className="content">
-                        <img className="Img"
-                            src={img1}
-                            alt="First slide"
-                        />
-                    </div>
-                </Carousel.Item>
+        <div className="container-fluid p-0" id="sliderHome" style={{ backgroundColor: 'rgb(235, 233, 233)' }}>
+            <div className="containerSlider">
+                <Carousel id="carousel" interval={3000} className="carousel">
+                    <Carousel.Item >
+                        <div className="content">
+                            <img className="Img"
+                                src={img1}
+                                alt="First slide"
+                            />
+                        </div>
+                    </Carousel.Item>
 
-                <Carousel.Item>
-                    <div className="content">
-                        <img className="Img"
-                            src={img2}
-                            alt="First slide"
-                        />
-                    </div>
-                </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="content">
+                            <img className="Img"
+                                src={img2}
+                                alt="First slide"
+                            />
+                        </div>
+                    </Carousel.Item>
 
-                <Carousel.Item>
-                    <div className="content">
-                        <img className="Img"
-                            src={img3}
-                            alt="First slide"
-                        />
-                    </div>
-                </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="content">
+                            <img className="Img"
+                                src={img3}
+                                alt="First slide"
+                            />
+                        </div>
+                    </Carousel.Item>
 
-            </Carousel>
+                </Carousel>
+            </div>
         </div>
 
     )

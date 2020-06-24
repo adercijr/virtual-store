@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Home from './components/Pages/Home'
+import Content from './components/layout/Content'
 import NewProduct from './components/Pages/NewProduct'
+import Slider from './components/Geral/SliderHome/SliderHome'
 
 const Routes = props => {
-    return(
+    return (
         <Switch>
-            <Route path="*" component={Home}/>
-            <Route path="/Vender" component={NewProduct}/>
+            <Route path="/" exact render={props =>
+                <Fragment>
+                    <Slider />
+                    <Content /> 
+                </Fragment>
+            } />
+            <Route path="/" component={Content}/>
+
         </Switch>
     )
 }

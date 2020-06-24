@@ -45,26 +45,24 @@ const CarouselCard = props => {
   }
 
   return (
-    <div className="Container-carousel-card">
-      <div>
-        <span style={{ fontSize: '2em', marginRight: '20px', marginLeft: '10px' }}>{props.title}</span>
-        <a href='/' style={{ textDecoration: 'none' }}>Ver todas</a>
+    <div className="container-content">
+      <div className="Container-carousel-card">
+        <div>
+          <span style={{ fontSize: '2em', marginRight: '20px', marginLeft: '10px' }}>{props.title}</span>
+          <a href='/' style={{ textDecoration: 'none' }}>Ver todas</a>
+        </div>
+        <Slider {...settings}>
+
+          {db.map(card => {
+            return (
+              <div className="CardCarousel" key={card.id}>
+                <Card {...card} />
+              </div>
+            )
+          })
+          }
+        </Slider>
       </div>
-      <Slider {...settings}>
-
-        {db.map(card => {
-          return (
-            <div className="CardCarousel" key={card.id}>
-              <Card {...card} />
-            </div>
-          )
-        })
-        }
-
-
-
-
-      </Slider>
     </div>
   )
 }

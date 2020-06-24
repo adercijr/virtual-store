@@ -3,7 +3,7 @@ import Content from '../layout/Content'
 
 const NewProduct = props => {
     return (
-        <Content />
+        <h1>New Product!</h1>
     )
 }
 export default NewProduct

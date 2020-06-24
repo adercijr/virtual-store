@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Button } from 'react-bootstrap'
 import './NavMenuMobile.css'
+import { Link } from 'react-router-dom'
 
 const NavMenuMobile = props => {
 
@@ -37,7 +38,7 @@ const NavMenuMobile = props => {
                     {menuItems.map(item => {
                         if (item.icon) {
                             return (
-                                <a href="/">
+                                <Link to={item.iconSpan}>
                                     <Row className="m-0 w-100 p-3">
                                         <div className="icon-item-minu-mobile">
                                             <i className={`${item.icon} ItemIcon`} style={{ color: `${props.color}` }}>
@@ -47,7 +48,7 @@ const NavMenuMobile = props => {
                                             <span style={{ fontSize: `${props.fontSize}` }}>{item.iconSpan}</span>
                                         </div>
                                     </Row>
-                                </a>
+                                </Link>
                             )
                         }
                     })}
