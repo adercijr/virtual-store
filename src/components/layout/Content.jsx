@@ -2,7 +2,7 @@ import React from 'react'
 import CarouselCard from '../Geral/CarouselCard/CarouselCard'
 import './Content.css'
 import { Switch, Route } from 'react-router-dom'
-import NewProduct from '../Pages/NewProduct'
+import NewProduct from '../../Pages/NewProduct'
 
 
 const Content = props => {

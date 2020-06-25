@@ -1,0 +1,62 @@
+.Cms-container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+         'header header'
+         'aside main';
+         grid-template-rows: 40px 1fr;
+         grid-template-columns: 200px 1fr;      
+ }
+
+.Cms-header {
+    grid-area: header;
+    background-color: #FFD645;
+    display: grid;
+    grid-template-areas: 
+        'toggle title exit';
+    grid-template-columns: 100px 1fr 120px;    
+}
+.Cms-aside {
+    grid-area: aside;
+    background-color: #C4C4C4;
+}
+.Cms-main {
+    grid-area: main;
+    background-color: #fff;
+}
+
+ .Cms-header-title {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .Cms-header-exit {
+    grid-area: exit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .Cms-header-toggle {
+    grid-area: toggle;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+ }
+ .Cms-header-exit a{
+    color: initial;
+ }
+ .Cms-header-exit a:hover{
+    text-decoration: none;
+    color: initial;
+ }
+ .iconToggleTrue {
+    transform: rotate(90deg);
+ }
+ .iconToggleFalse {
+    transform: rotate(0deg);
+ }
+.Cms-header-toggle a {
+    cursor: pointer;
+    padding: 5px 20px;
+}

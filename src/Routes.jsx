@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Content from './components/layout/Content'
-import NewProduct from './components/Pages/NewProduct'
 import Slider from './components/Geral/SliderHome/SliderHome'
 
 const Routes = props => {
