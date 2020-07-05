@@ -23,7 +23,7 @@
     text-decoration: none;
     color: var(--font-color)
 }
-.subMenu {
+.children {
     position: absolute;
     z-index: 200; 
     background-color: #333;
@@ -32,10 +32,10 @@
     padding: 20px 0 20px 0;
     height: 400px;
 }
-.subMenu a{
+.children a{
     text-decoration: none!important;
 }
-.itemSubMenu {    
+.itemchildren {    
     color: #fff;  
     padding: 10px 30px;
     font-size: 0.9em;
@@ -43,13 +43,13 @@
     justify-content: space-between;
     align-items: center;
 }
-.itemSubMenu:hover {
+.itemchildren:hover {
     background-color: var(--primary);
 }
-.showSubMenuHover{
+.showchildrenHover{
     display: block!important;
 }
-.subMenuSub {
+.childrenSub {
     position: absolute;
     z-index: 210; 
     background-color: #fff;
@@ -85,3 +85,4 @@
 .nav-component a:hover {
     color: initial;
 }
+

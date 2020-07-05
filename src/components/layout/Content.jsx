@@ -3,6 +3,7 @@ import CarouselCard from '../Geral/CarouselCard/CarouselCard'
 import './Content.css'
 import { Switch, Route } from 'react-router-dom'
 import NewProduct from '../../Pages/NewProduct'
+import Teste from './Teste'
 
 
 const Content = props => {
@@ -12,13 +13,16 @@ const Content = props => {
 
                 <Switch>
                     <Route path="/Vender" component={NewProduct} />
-                    <Route path="/" exact render={props => 
-                        <CarouselCard title="Ofertas" db="db-offers" />                    
-                    }/>
+                    <Route path="/" exact render={props =>
+                        <React.Fragment>
+                            <CarouselCard title="Ofertas" db="db-offers" />
+                            <Teste />
+                        </React.Fragment>
+                    } />
                 </Switch>
 
-                
-                
+
+
 
 
             </div>

@@ -4,25 +4,25 @@ import Footer from './components/layout/Footer'
 import './App.css'
 import Routes from './Routes'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Cms from './Pages/Cms'
+import Cms from './Pages/CMS/Cms'
 
 function App() {
 
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/Admin" exact component={Cms} />
+        <Route path="/admin" component={Cms} />
         <Route path="/" render={props => {
-          return(
+          return (
 
-          <div className="App">
-            <Header />
-            <Routes />
-            <Footer />
-          </div>
+            <div className="App">
+              <Header />
+              <Routes />
+              <Footer />
+            </div>
           )
-        }}/>
-    </Switch>
+        }} />
+      </Switch>
 
     </BrowserRouter>
   )

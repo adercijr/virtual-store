@@ -1,0 +1,40 @@
+.Cms-header {
+    grid-area: header;
+    height: 35px;
+    background-color: #FFD645;
+    display: grid;
+    grid-template-areas: 
+        'toggle title exit';
+    grid-template-columns: 100px 1fr 120px;    
+}
+
+ .Cms-header-title {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .Cms-header-exit {
+    grid-area: exit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .Cms-header-toggle {
+    grid-area: toggle;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+ }
+ .Cms-header-exit a{
+    color: initial;
+ }
+ .Cms-header-exit a:hover{
+    text-decoration: none;
+    color: initial;
+ }
+ .Cms-main {
+   background-color: #fff;
+   box-shadow: 0px 0px 1px #ccc;
+   height: 98%;
+ }

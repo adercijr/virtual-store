@@ -1,0 +1,97 @@
+[
+    {
+       "id": 1,
+       "name": "Categoria"
+    },
+         {
+             "name": "Veículos",
+             "id": "A",
+             "parentId": 1
+          },
+          {
+             "name": "Tecnologia",
+             "id": "B",
+             "parentId": 1
+          },             
+                {
+                   "name": "Celulares e telefones",
+                   "id": "0A",
+                   "parentId": "B"
+                },                
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": "A0",
+                         "parentId": "0A"
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": "A1",
+                         "parentId": "0A"
+                      },
+                   
+                {
+                   "name": "Cameras e acessórios",
+                   "id": "1A",
+                   "parentId": "B"
+                },
+                   
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": "B2",
+                         "parentId": "1A"
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": "B3",
+                         "parentId": "1A"
+                      },
+                   
+                
+                {
+                   "name": "Games",
+                   "id": 3,
+                   "parentId": 1
+                },
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      },                   
+                
+                {
+                   "name": "Informática",
+                   "id": 4,
+                   "parentId": 1
+                },
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                {
+                   "name": "Eletrônicos, Áudio e Vídeo",
+                   "id": 5,
+                   "parentId": 1
+                },
+                      {
+                         "name": "Celulares e Smartphones",
+                         "id": 1,
+                         "parentId": 1
+                      },
+                      {
+                         "name": "Acessórios para celulares",
+                         "id": 1,
+                         "parentId": 1
+                      }
+]
+          

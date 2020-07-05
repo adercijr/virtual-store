@@ -3,18 +3,27 @@ import { Col } from 'react-bootstrap'
 import './NavHeader.css'
 import Triangle from '../Triangle/Triangle'
 import { Link } from 'react-router-dom'
+import { baseUrl } from '../../../config'
+import useAxios from 'axios-hooks'
 
 const NavHeader = props => {
 
     const [isHover, handleHover] = useState()
     const [isHoverSub, handleHoverSub] = useState()
 
-    const menuItems = require(`../../../${props.db}.json`)
+
+
+    const [{ data, loading, error }, refetch] = useAxios(
+        `${baseUrl}/${props.db}`
+    )
+
+
+
 
     return (
         <div className={`nav-component ${props.justify}`}
             style={{ fontSize: `${props.fontSize}` }}>
-            {menuItems.map(item => {
+            {data && data.map(item => {
                 if (item.icon) {
                     return (
                         <Link to={item.iconSpan}>
@@ -24,21 +33,21 @@ const NavHeader = props => {
                         </Link>
                     )
                 }
-                if (item.subMenu) {
+                if (Array.isArray(item.children) && item.children.length) {
                     const show = (id) => {
                         handleHover(id)
-                        document.getElementById('content').style.filter = 'brightness(70%)'                        
-                        if(document.getElementById('sliderHome')){
+                        document.getElementById('content').style.filter = 'brightness(70%)'
+                        if (document.getElementById('sliderHome')) {
                             document.getElementById('sliderHome').style.filter = 'brightness(70%)'
                         }
                     }
                     const hidden = (id) => {
                         handleHover('')
                         document.getElementById('content').style.filter = 'brightness(100%)'
-                        
-                        if(document.getElementById('sliderHome')){
+
+                        if (document.getElementById('sliderHome')) {
                             document.getElementById('sliderHome').style.filter = 'brightness(100%)'
-                        }
+                        } 
                     }
 
                     return (
@@ -56,10 +65,10 @@ const NavHeader = props => {
                             </div>
 
                             {isHover === item.id &&
-                                <div className="subMenu" id={item.id} >
+                                <div className="children" id={item.id} >
 
-                                    {item.subMenu.map((sub, index) => {
-                                        if (sub.subMenu) {
+                                    {item.children.map((sub, index) => {
+                                        if (Array.isArray(sub.children) && sub.children.length) {
                                             const showSub = (id) => {
                                                 handleHoverSub(id)
                                             }
@@ -69,20 +78,23 @@ const NavHeader = props => {
                                             return (
                                                 <div onMouseEnter={() => showSub(sub.id)} onMouseLeave={() => hiddenSub(sub.id)} key={sub.id}>
                                                     <Link to={sub.name} key={index} style={{ color: `${props.color}` }}>
-                                                        <div className="itemSubMenu">{sub.name}
-                                                            <i className="fa fa-angle-right pl-2 text-white-50" aria-hidden="true"></i>
+
+                                                        <div className="itemchildren">{sub.name}
+                                                            {sub.children !== undefined &&
+                                                                <i className="fa fa-angle-right pl-2 text-white-50" aria-hidden="true"></i>
+                                                            }
                                                         </div>
                                                     </Link>
                                                     {isHoverSub === sub.id &&
-                                                        <div className="subMenuSub">
+                                                        <div className="childrenSub">
                                                             <h5>{sub.name}</h5>
                                                             <hr></hr>
                                                             <div style={{ display: 'flex', flexWrap: 'wrap', fontSize: '0.9em' }}>
-                                                                {sub.subMenu.map(s => {
+                                                                {sub.children.map(s => {
                                                                     return (
                                                                         <Col sm={5} style={{ margin: '0px 15px 15px 0px', padding: 0 }} key={s.id}>
                                                                             <Link to={s.name} style={{ fontWeight: 'bold' }}>{s.name}</Link>
-                                                                            {s.subMenu.map(item => {
+                                                                            {s.children.map(item => {
                                                                                 return (
                                                                                     <div style={{ display: 'flex' }}>
                                                                                         <Link to={item.name} style={{ color: `${props.color}` }}>{item.name}</Link>
@@ -101,7 +113,7 @@ const NavHeader = props => {
                                             )
                                         } else {
                                             return (
-                                                <Link to={sub.name} key={index} style={{ color: `${props.color}` }}><div className="itemSubMenu">{sub.name}</div></Link>
+                                                <Link to={sub.name} key={index} style={{ color: `${props.color}` }}><div className="itemchildren">{sub.name}</div></Link>
                                             )
                                         }
                                     })}

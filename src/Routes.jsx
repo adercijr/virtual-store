@@ -12,7 +12,7 @@ const Routes = props => {
                     <Content /> 
                 </Fragment>
             } />
-            <Route path="/" component={Content}/>
+            <Route path="*" component={Content}/>
 
         </Switch>
     )

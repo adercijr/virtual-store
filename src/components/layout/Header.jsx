@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom'
 const Header = props => {
     const [toggle, handleToggle] = useState(false)
 
+    const [navDB, setnavDB] = useState()
+
+    
+
     return (
         <>
             <Container fluid style={{ backgroundColor: 'var(--header-color)', padding: 0 }}>
@@ -45,8 +49,9 @@ const Header = props => {
                         <div className="pr-2" style={{ width: '150px!important' }}>
                             <ButtonAddress />
                         </div>
-                        <Col style={{ padding: 0 }}>
-                            <NavHeader db="db" justify={'justify-start'} />
+                        <Col style={{ padding: 0, display:'flex' }}>
+                            <NavHeader db="categories/tree" justify={'justify-start'} />
+                            <NavHeader db="navHeaderPrincipal" justify={'justify-start'} />
                         </Col>
                         <Col sm={4}>
                             <NavHeader db="db2" justify={'justify-around'} />
