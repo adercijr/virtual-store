@@ -6,6 +6,8 @@ import ButtonAddress from '../Geral/ButtonAddress/ButtonAddress'
 import NavHeader from '../Geral/NavHeader/NavHeader'
 import NavMenuMobile from '../Geral/NavMenuMobile/NavMenuMobile'
 import { Link } from 'react-router-dom'
+import NavHeaderTitle from '../Geral/NavHeaderTitle/NavHeaderTitle'
+
 
 const Header = props => {
     const [toggle, handleToggle] = useState(false)
@@ -28,12 +30,7 @@ const Header = props => {
                             />
                         </Col>
 
-                        <Col sm={4} className="Download-App">
-                            <a href="/">
-                                <i className="fa fa-mobile fa-2x mr-2" aria-hidden="true"></i>
-                                <span>Baixe o App gratis do Mercado Livre!</span>
-                            </a>
-                        </Col>
+                        <NavHeaderTitle db="navHeaderAside" />
 
                         <Col className="Content-Menu-Mobile" xs={1} >
                             <button className="Menu-Mobile" onClick={() => handleToggle(!toggle)}>
@@ -54,7 +51,7 @@ const Header = props => {
                             <NavHeader db="navHeaderPrincipal" justify={'justify-start'} />
                         </Col>
                         <Col sm={4}>
-                            <NavHeader db="db2" justify={'justify-around'} />
+                            <NavHeader db="navHeaderSecondary" justify={'justify-around'} />
                         </Col>                     
                     </Row>                   
 

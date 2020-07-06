@@ -5,6 +5,13 @@
     font-size: 0.9em;
     align-items: center;
 }
+.menuIcon {
+    color:  rgba(70, 70, 70, 0.753);
+}
+.menuFinal {
+    color:  rgba(70, 70, 70, 0.877);
+    padding: 3px 0px;
+}
 .nav-component span{
     font-size: 0.8em;
     margin: 5px;
@@ -38,7 +45,7 @@
 .itemchildren {    
     color: #fff;  
     padding: 10px 30px;
-    font-size: 0.9em;
+    font-size: 0.95em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,11 +60,10 @@
     position: absolute;
     z-index: 210; 
     background-color: #fff;
-    width: 450px; 
     border-radius: 2px;
     padding: 30px;
     height: 400px;
-    width: 500px;
+    width: 550px;
     margin-left: 248px;
     top: 0px;
 }
@@ -80,7 +86,6 @@
 }
 .nav-component a {
     text-decoration: none!important;
-    color: initial;
 }
 .nav-component a:hover {
     color: initial;

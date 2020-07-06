@@ -26,10 +26,10 @@ const NavHeader = props => {
             {data && data.map(item => {
                 if (item.icon) {
                     return (
-                        <Link to={item.iconSpan}>
-                            <i className={`${item.icon} ItemIcon`} style={{ color: `${props.color}` }}>
+                        <Link to={item.name} className="menuIcon">
+                            <i className={`fa fa-${item.icon} fa-lg ItemIcon`} style={{ color: `${props.color}` }}>
                             </i>
-                            <span style={{ fontSize: `${props.fontSize}` }}>{item.iconSpan}</span>
+                            <span style={{ fontSize: `${props.fontSize}` }}>{item.name}</span>
                         </Link>
                     )
                 }
@@ -89,15 +89,15 @@ const NavHeader = props => {
                                                         <div className="childrenSub">
                                                             <h5>{sub.name}</h5>
                                                             <hr></hr>
-                                                            <div style={{ display: 'flex', flexWrap: 'wrap', fontSize: '0.9em' }}>
+                                                            <div style={{ display: 'flex', flexWrap: 'wrap', fontSize: '0.95em' }}>
                                                                 {sub.children.map(s => {
                                                                     return (
                                                                         <Col sm={5} style={{ margin: '0px 15px 15px 0px', padding: 0 }} key={s.id}>
-                                                                            <Link to={s.name} style={{ fontWeight: 'bold' }}>{s.name}</Link>
+                                                                            <Link to={s.name} style={{ fontWeight: 'bold', color: 'initial', fontSize: '1.1em' }}>{s.name}</Link>
                                                                             {s.children.map(item => {
                                                                                 return (
                                                                                     <div style={{ display: 'flex' }}>
-                                                                                        <Link to={item.name} style={{ color: `${props.color}` }}>{item.name}</Link>
+                                                                                        <Link to={item.name} className="menuFinal">{item.name}</Link>
                                                                                     </div>
                                                                                 )
 

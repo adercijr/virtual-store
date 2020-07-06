@@ -3,11 +3,13 @@ import './Cms.css'
 import { Container, Tabs, Tab } from 'react-bootstrap'
 import Categories from './Categories/Categories'
 import NavHeaderCMS from './navHeader/NavHeaderCMS'
+import NavHeaderSideCMS from './navHeader/NavHeaderSideCMS'
+import NavHeaderSecCMS from './navHeader/NavHeaderSecCMS'
 
 const Cms = props => {
 
     return (
-        <div className="Cms-body bg-light vh-100">
+        <div className="Cms-body">
             <header className="Cms-header">
                 <div className="Cms-header-toggle">
                 </div>
@@ -23,6 +25,8 @@ const Cms = props => {
                     </Tab>
                     <Tab eventKey="Navegação Superior" title="Navegação Superior" className="p-2 mt-3">
                         <NavHeaderCMS />
+                        <NavHeaderSecCMS />
+                        <NavHeaderSideCMS />
                     </Tab>
                     
                 </Tabs>

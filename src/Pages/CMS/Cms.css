@@ -37,4 +37,8 @@
    background-color: #fff;
    box-shadow: 0px 0px 1px #ccc;
    height: 98%;
+ } 
+ .Cms-body{
+   min-height: 100vh;
+   background-color: cadetblue;
  }

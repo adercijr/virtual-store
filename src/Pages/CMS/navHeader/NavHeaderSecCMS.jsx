@@ -4,22 +4,25 @@ import useAxios from 'axios-hooks'
 import { baseUrl } from '../../../config'
 import axios from 'axios'
 
-const NavHeaderCMS = props => {
+const NavHeaderSecCMS = props => {
 
     const [{ data, loading, error }, refetch] = useAxios(
-        `${baseUrl}/navHeaderPrincipal`
+        `${baseUrl}/navHeaderSecondary`
     )
 
     const [mode, handleMode] = useState('save')
 
     const [navEditName, handleNavEditName] = useState()    
     const [navEditId, handleNavEditId] = useState()
+    const [navEditIcon, handleNavEditIcon] = useState()
 
     const [newNavName, handleNewNavName] = useState()
+    const [newNavIcon, handleNewNavIcon] = useState()
 
     const handleEditing = (cat) => {
         handleMode('edit')
         handleNavEditName(cat.name)
+        handleNavEditIcon(cat.icon)
         handleNavEditId(cat.id)
     }
 
@@ -28,21 +31,23 @@ const NavHeaderCMS = props => {
         e.preventDefault()
 
         const newNav = {
-            name: newNavName
+            name: newNavName,
+            icon: newNavIcon
         }
 
         const editNav = {
-            name: navEditName
+            name: navEditName,
+            icon: navEditIcon
         }
 
         if (mode === 'save') {
-            axios.post(`${baseUrl}/navHeaderPrincipal`, newNav).then(() => {
+            axios.post(`${baseUrl}/navHeaderSecondary`, newNav).then(() => {
                 cancelEdit()
                 refetch()
             })
 
         } else {
-            axios.put(`${baseUrl}/navHeaderPrincipal/${navEditId}`, editNav).then(() => {
+            axios.put(`${baseUrl}/navHeaderSecondary/${navEditId}`, editNav).then(() => {
                 cancelEdit()
                 refetch()
             })
@@ -50,7 +55,7 @@ const NavHeaderCMS = props => {
     }
 
     const delet = (nav) => {
-        axios.delete(`${baseUrl}/navHeaderPrincipal/${nav.id}`).then(() => {
+        axios.delete(`${baseUrl}/navHeaderSecondary/${nav.id}`).then(() => {
             refetch()
         })
 
@@ -58,18 +63,29 @@ const NavHeaderCMS = props => {
 
     const cancelEdit = () => {
         handleNavEditName('')
+        handleNavEditIcon('')
         handleNewNavName('')
+        handleNewNavIcon('')
         handleMode('save')
     }
 
     
     const handleChangeName = event => {
         if(mode === 'save'){
-            handleNewNavName(event.target.value)  
+            handleNewNavName(event.target.value) 
         } else {
             handleNavEditName(event.target.value)
-        }
+        }        
     }
+    const handleChangeIcon = event => {
+        if(mode === 'save'){
+            handleNewNavIcon(event.target.value)  
+        } else {
+            handleNavEditIcon(event.target.value)
+        }        
+    }
+
+    
 
     
 
@@ -78,13 +94,20 @@ const NavHeaderCMS = props => {
 
 
     return (
-        <div className="w-100">
-            <h2>Navegação Principal</h2>
-            <Form onSubmit={save} className="mt-4">
+        <div className="w-100 mt-5">
+            <hr className="p-2"></hr>
+            <h2>Navegação Secondária</h2>
+            <Form onSubmit={save}>
                 <Form.Group >
-                    <Form.Label>Nome</Form.Label>
-                    <Form.Control type="text" placeholder="Informe o nome da navegação"
+                    <Form.Label>Span</Form.Label>
+                    <Form.Control type="text" placeholder="Informe o nome navegação"
                         value={navEditName ? navEditName : newNavName} onChange={handleChangeName}/>
+                </Form.Group>
+               
+                <Form.Group >
+                    <Form.Label>Icon</Form.Label>
+                    <Form.Control type="text" placeholder="Informe o ícone da nevegação"
+                        value={navEditIcon ? navEditIcon : newNavIcon} onChange={handleChangeIcon}/>
                 </Form.Group>
 
                 
@@ -99,11 +122,12 @@ const NavHeaderCMS = props => {
 
             </Form>
 
-            <Table striped className="mt-5" size="sm">
+            <Table striped className="mt-5">
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Nome</th>
+                        <th>Name</th>
+                        <th>Icon</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
@@ -114,6 +138,7 @@ const NavHeaderCMS = props => {
                             <tr key={nav.id}>
                                 <td >{nav.id}</td>
                                 <td >{nav.name}</td>
+                                <td >{nav.icon}</td>
                                 <td  >
                                     <Button variant="danger" size="sm" onClick={() => delet(nav)}>
                                         <i className="fa fa-trash-o" aria-hidden="true"></i>
@@ -128,8 +153,7 @@ const NavHeaderCMS = props => {
 
                 </tbody>
             </Table>
-            
         </div>
     )
 }
-export default NavHeaderCMS
+export default NavHeaderSecCMS

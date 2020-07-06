@@ -126,7 +126,7 @@ const Categories = props => {
 
 
 
-            <Table striped className="mt-5">
+            <Table striped className="mt-5" size="sm">
                 <thead>
                     <tr>
                         <th>#</th>

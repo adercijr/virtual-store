@@ -66,14 +66,5 @@
     align-items: flex-end;
 }
 
-.Download-App a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none!important;
-    color: var(--font-color);
-}
-.Download-App a:hover{
-    color: var(--font-color)
-}
+
 
