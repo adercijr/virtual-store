@@ -5,6 +5,7 @@ import Categories from './Categories/Categories'
 import NavHeaderCMS from './navHeader/NavHeaderCMS'
 import NavHeaderSideCMS from './navHeader/NavHeaderSideCMS'
 import NavHeaderSecCMS from './navHeader/NavHeaderSecCMS'
+import Images from './Images/Images'
 
 const Cms = props => {
 
@@ -27,6 +28,9 @@ const Cms = props => {
                         <NavHeaderCMS />
                         <NavHeaderSecCMS />
                         <NavHeaderSideCMS />
+                    </Tab>
+                    <Tab eventKey="Images" title="Images" className="p-2 mt-3">
+                        <Images />
                     </Tab>
                     
                 </Tabs>

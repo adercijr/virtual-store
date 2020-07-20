@@ -13,7 +13,7 @@
         padding: 0px;
     } 
     .headerLogo {
-        content:url('../../assets/images/logo-mini.png');
+        content:url('http://localhost:3001/public/logo/logo-mini.png');
         min-width: 50px;
         max-width: 50px;
         height: 35px;
@@ -44,7 +44,7 @@
         padding: 0;
     }
     div .headerLogo{
-        content:url('../../assets/images/logo.png');
+        content:url('http://localhost:3001/public/logo/logo.png');
         height: 35px;
         min-width: 135px;
         max-width: 135px;

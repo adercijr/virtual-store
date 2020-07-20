@@ -1,0 +1,24 @@
+.previewLogo {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #CCC;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.divForm {
+    display: flex;
+    max-width: 500px;
+}
+.inputFile {
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.previewLogo > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
