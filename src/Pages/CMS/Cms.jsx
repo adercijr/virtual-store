@@ -29,7 +29,7 @@ const Cms = props => {
                         <NavHeaderSecCMS />
                         <NavHeaderSideCMS />
                     </Tab>
-                    <Tab eventKey="Images" title="Images" className="p-2 mt-3">
+                    <Tab eventKey="Images" title="Imagens" className="p-2 mt-3">
                         <Images />
                     </Tab>
                     

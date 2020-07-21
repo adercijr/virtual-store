@@ -1,43 +1,30 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
 import './SliderHome.css'
-import img1 from '../../../assets/images/carousel1.jpg'
-import img2 from '../../../assets/images/carousel2.jpg'
-import img3 from '../../../assets/images/carousel3.jpg'
+import baseUrl from '../../../config'
 
 const SliderHome = props => {
+
+    const Imgs = ["1", "2", "3", "4", "5", "6"]
 
     return (
         <div className="container-fluid p-0" id="sliderHome" style={{ backgroundColor: 'rgb(235, 233, 233)' }}>
             <div className="containerSlider">
                 <Carousel id="carousel" interval={3000} className="carousel">
-                    <Carousel.Item >
-                        <div className="content">
-                            <img className="Img"
-                                src={img1}
-                                alt="First slide"
-                            />
-                        </div>
-                    </Carousel.Item>
 
-                    <Carousel.Item>
-                        <div className="content">
-                            <img className="Img"
-                                src={img2}
-                                alt="First slide"
-                            />
-                        </div>
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                        <div className="content">
-                            <img className="Img"
-                                src={img3}
-                                alt="First slide"
-                            />
-                        </div>
-                    </Carousel.Item>
-
+                    {Imgs.map(item => {
+                        return (
+                            <Carousel.Item >
+                                <div className="content">
+                                    <img className="Img"
+                                        src={`${baseUrl}/public/carousel/carousel${item}.jpg`}
+                                        alt="slide"
+                                    />
+                                </div>
+                            </Carousel.Item>
+                        )
+                    })}
+                    
                 </Carousel>
             </div>
         </div>

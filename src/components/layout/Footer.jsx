@@ -26,7 +26,7 @@ const Footer = props => {
                     <Row className="footerStrip m-0" >
                         <a href="#" className="footerLink">
                             <div className="footerImg">
-                                <img src={'http://localhost:3001/public/logo/logo-mini.png'}></img>
+                                <img src={'https://jr-virtual-store-com.umbler.net/public/logo/logo-mini.png'}></img>
                             </div>
                             <span>Compre e venda com o app!</span>
                         </a>
